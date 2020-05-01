@@ -8,6 +8,24 @@ window.addEventListener("scroll", function(){
     }
 })
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "230px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "230px";
+//   }
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }
+
+//   function myFunction(x) {
+//     x.classList.toggle("change")
+//   }
+
 
 // $(window).on("scroll", function() {
 //     if($(window).scrollTop() > 50) {

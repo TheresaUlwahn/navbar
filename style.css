@@ -11,8 +11,59 @@ html {
 body {
   font-family: poppins;
 }
+/* 
 
-#menu-area{
+span {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: flex-end;
+  color: white;
+  padding: 40px 0px 0px 30px;
+}
+
+/* The side navigation menu */
+/* .sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgb(244, 163, 132);
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+} */
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* When you mouse over the navigation links, change their color */
+/* .sidenav a:hover {
+  color:rgb(244, 163, 132);
+} */
+/* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}  */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#menu-area {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -30,6 +81,7 @@ body {
   height: 60px;
   transition: height 0.5s;
   padding-top: 10px;
+  display: contents;
 }
 #menu-area ul {
  width: 500px;
@@ -95,6 +147,11 @@ body {
 #menu-area.cus-nav .logo img {
   height: 65px;
 }
+
+
+
+
+
 
 
 /* body {
@@ -200,14 +257,17 @@ nav {
     /*Show the navbar and hide the hamburger in this size*/
     /*Justify content;Spread the content with space between. x*/
     
-/* @media (min-width: 650px) {
-  header {
+/* @media (min-width: 650px) { */
+  /* header {
       justify-content: space-between;
   }
   nav {
       display: inline-block;
+  } */
+  /* #menu-area ul {
+    display: contents;
   }
-  .hamburger {
+  span {
       display: none;
   }
 } */
