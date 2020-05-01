@@ -8,12 +8,26 @@ window.addEventListener("scroll", function(){
     }
 })
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "230px";
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
   }
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+});
+
+
+
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "230px";
+//   }
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }
 
 // function openNav() {
 //     document.getElementById("mySidenav").style.width = "230px";

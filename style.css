@@ -58,6 +58,9 @@ span {
   margin-left: 50px;
 }  */
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/*********Navbar***********/
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
@@ -70,11 +73,13 @@ span {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  /* padding: 13px 20px; */
   padding: 15px 60px;
   position: fixed;
   width: 100%;
   top: 0;
   transition: background 0.5s;
+ 
 }
 
 #menu-area .logo img {
@@ -93,6 +98,7 @@ span {
  display: -o-flex;
  display: flex;
  align-items: center;
+ display: none;
 }
 #menu-area ul li a {
   text-decoration: none;
@@ -144,15 +150,66 @@ span {
   color: #000;
   /* color: #fff; */
 }
+
 #menu-area.cus-nav .logo img {
   height: 65px;
 }
 
+/******** Hamburger *********/
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+  
+}
+
+.menu-btn__burger {
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 
 
 
-
-
+}
 
 /* body {
   background: peachpuff;
@@ -257,7 +314,17 @@ nav {
     /*Show the navbar and hide the hamburger in this size*/
     /*Justify content;Spread the content with space between. x*/
     
-/* @media (min-width: 650px) { */
+@media only screen and (min-width: 768px) {
+  /* #menu-area{
+    padding: 15px 60px;
+  } */
+  #menu-area ul{
+    display: contents;
+  }
+
+  .menu-btn {
+    display: none;
+  }
   /* header {
       justify-content: space-between;
   }
@@ -269,5 +336,5 @@ nav {
   }
   span {
       display: none;
-  }
-} */
+  } */
+}
