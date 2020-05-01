@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: poppins;
 }
@@ -44,7 +48,7 @@ body {
   color: white;
 }
 .banner-area {
-  background: url('assets/13754610_10153650776382539_353047018394239264_n.jpg');
+  background: url('assets/peter\ och\ theresa\ washington\ \ 2.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: top;
