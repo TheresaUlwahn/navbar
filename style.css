@@ -11,54 +11,10 @@ html {
 body {
   font-family: poppins;
 }
-/* 
 
-span {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-content: flex-end;
-  color: white;
-  padding: 40px 0px 0px 30px;
-}
-
-/* The side navigation menu */
-/* .sidenav {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: rgb(244, 163, 132);
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
-} */
-/* The navigation menu links */
-/* .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-} */
-
-/* When you mouse over the navigation links, change their color */
-/* .sidenav a:hover {
-  color:rgb(244, 163, 132);
-} */
-/* Position and style the close button (top right corner) */
-/* .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}  */
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
+.main-content div {
+  padding-top: 90px;
+} 
 /*********Navbar***********/
 
 #main {
@@ -146,7 +102,7 @@ span {
   display: flex;
   text-decoration: none;
   background: #fff;
-  color: darkslategrey;
+  color: #2f4f4f;
   /* background: #262626;
   color: #fff; */
   padding: 15px 30px;
@@ -245,7 +201,7 @@ span {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: lightgray;
+  color: #2f4f4f;
   display: block;
   transition: 0.3s;
 
