@@ -8,6 +8,15 @@ window.addEventListener("scroll", function(){
     }
 })
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -19,7 +28,6 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-
 
 
 // function openNav() {
