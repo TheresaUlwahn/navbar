@@ -1,3 +1,4 @@
+// Head navbar going from transparent to solid
 window.addEventListener("scroll", function(){
     let menuArea = this.document.getElementById('menu-area')
 
@@ -21,7 +22,7 @@ function closeNav() {
   document.getElementById("main").style.marginRight= "0";
 }
 
-
+// Button for opening the side navigation in mobile mode
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -33,54 +34,4 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "230px";
-//   }
-//   function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-//   }
-
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "230px";
-//   }
-//   function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-//   }
-
-//   function myFunction(x) {
-//     x.classList.toggle("change")
-//   }
-
-
-// $(window).on("scroll", function() {
-//     if($(window).scrollTop() > 50) {
-//         $(".header").addClass("active");
-//     } else {
-//         //remove the background property so it comes transparent again (defined in your css)
-//        $(".header").removeClass("active");
-//     }
-// });
-// window.onscroll = function() {myFunction()};
-
-// var header = document.getElementById("myHeader");
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
 
