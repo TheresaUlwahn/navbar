@@ -74,7 +74,7 @@ span {
   display: flex;
   justify-content: space-between;
   /* padding: 13px 20px; */
-  padding: 15px 60px;
+  padding: 15px 33px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -110,6 +110,7 @@ span {
   /* color: #262626; */
   color: white;
   text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
+  align-self: center;
 }
 #menu-area ul {
   list-style: none;
@@ -145,7 +146,7 @@ span {
   display: flex;
   text-decoration: none;
   background: #fff;
-  color: #262626;
+  color: darkslategrey;
   /* background: #262626;
   color: #fff; */
   padding: 15px 30px;
@@ -244,7 +245,7 @@ span {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: lightgray;
   display: block;
   transition: 0.3s;
 
@@ -253,6 +254,7 @@ span {
 span {
   color: #fff;
   text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
+  font-size: xx-large;
 }
 
 .sidenav a:hover{
